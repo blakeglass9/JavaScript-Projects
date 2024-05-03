@@ -53,4 +53,3 @@ function performAddition() {
     document.getElementById("randomBtn").addEventListener("click", generateRandomNumber);
   });
   
-  
