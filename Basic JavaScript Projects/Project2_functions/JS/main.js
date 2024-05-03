@@ -10,5 +10,5 @@ function updateElement() {
     var result = variable1 + " " + variable2;
 
     // Update the content of the output element
-    outputElement.textContent = result;
+    outputElement.textContent = sent1;
 }
