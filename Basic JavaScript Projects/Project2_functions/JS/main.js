@@ -3,11 +3,11 @@ function updateElement() {
     var outputElement = document.getElementById("output");
 
     // Assign values to two variables
-    var variable1 = "Hello";
-    var variable2 = "world!";
+    var sent1 = "Hello";
+    var sent2 = "world!";
 
-    // Concatenate the variables
-    var result = variable1 + " " + variable2;
+   // Concatenate the two variables using +=
+    sent1 += sent2;
 
     // Update the content of the output element
     outputElement.textContent = sent1;
