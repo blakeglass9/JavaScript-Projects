@@ -1,20 +1,22 @@
-// Create a dictionary using JavaScript objects
+// Create a dictionary TERM
 var dictionary = {
-    "key1": "value1",
-    "key2": "value2",
-    "key3": "value3"
+    "Fruit": "Apple",
+    "Meat": "Steak",
+    "Vegetable": "carrot"
   };
   
-  // Function to display a value from the dictionary
-  function displayValue() {
+  // Function to display a key value pair from the dictionary
+  function displayKeyValuePair() {
     // Get a random key from the dictionary
     var keys = Object.keys(dictionary);
     var randomKey = keys[Math.floor(Math.random() * keys.length)];
   
-    // Get the corresponding value for the random key
+    // Remove the key from the dictionary
     var value = dictionary[randomKey];
+    delete dictionary[randomKey];
   
-    // Display the value in the paragraph with id "dictionary"
-    document.getElementById("dictionary").innerHTML = "Key: " + randomKey + ", Value: " + value;
+    // Display the key-value pair in the paragraph with id "dictionaryOutput"
+    var outputElement = document.getElementById("dictionaryOutput");
+    outputElement.textContent = "Key: " + randomKey + ", Value: " + value;
   }
   
