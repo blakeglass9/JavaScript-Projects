@@ -1,9 +1,16 @@
-// Create a dictionary TERM
+// Create a dictionary TERM 
+function my_Dictionary () {
 var dictionary = {
     "Fruit": "Apple",
     "Meat": "Steak",
-    "Vegetable": "carrot"
+    "Vegetable": "carrot",
+    "Age": "1 million",
+    "Sound": "Flip!"
   };
+  delete dictionary.Sound;
+  document.getElementById("Dictionary").innerHTML = dictionary.Sound;
+}
+
   
   // Function to display a key value pair from the dictionary
   function displayKeyValuePair() {
