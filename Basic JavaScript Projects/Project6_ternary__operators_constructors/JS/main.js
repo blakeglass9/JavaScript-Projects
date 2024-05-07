@@ -5,6 +5,11 @@ function checkNumber() {
     displayResult(result);
 }
 
+// Function to display the result in the HTML element with id "result"
+function displayResult(result) {
+    document.getElementById("result").innerHTML = "The number is " + result + ".";
+}
+
 // Constructor function that uses the "new" and "this" keywords
 function Person(name, age) {
     this.name = name;
