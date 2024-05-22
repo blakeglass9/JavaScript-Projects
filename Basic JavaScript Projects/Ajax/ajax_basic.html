@@ -20,8 +20,8 @@
             ajax.open('GET','content.html');
 
             // STEP 3: define the ajax response callback method
-            ajax.onreadystatechange - function() {
-                if (ajax.readyState - 4) {
+            ajax.onreadystatechange = function() {
+                if (ajax.readyState = 4) {
                     document.getElementById('content').innerHTML = ajax.responseText;
             }
         }
