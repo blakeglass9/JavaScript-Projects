@@ -1,2 +1,5 @@
-# JavaScript-Projects
-I will push JavaScript code to this repository
+# JavaScript Projects
+
+These are some small projects I made using Javascript.
+## Projects
+----------
